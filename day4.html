@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./day4.css">
+</head>
+<body>
+   
+    <fieldset>
+        <legend style="text-align: center;"><h1>Registration from</h1></legend>
+        <form method="get" style="background: linear-gradient(red,green);">
+            <div class="circle">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <label id="name">Fullname</label> <br>
+            <input type="text" placeholder="fullname " minlength="1" name="fullname" required >
+            <br>
+            <label >Password</label> <br>
+            <input type="password" placeholder="password" name="password"> <br> <br>
+            <label >Mobile no</label> <br> 
+            <!-- <input type="tel" placeholder="telephone number" pattern="^(\+91[\-\s]?)?[6-9]\d{9}$"> -->
+            <input type="tel" maxlength="10"  pattern="[6-9][0-9]{9}"> <br> <br>
+            <label >Gender</label> <br>
+            
+            <input type="radio" name="gender"> 
+            <label >Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+            <label >Others</label> <br> <br>
+            <input type="checkbox"> 
+            <label >Acccept terms amd condition</label> <br> <br>
+            <label>DOB</label> <br>   
+            <input type="date" > <br> <br>
+            <label >Email</label>
+            <input type="email" placeholder="enter your email" >
+             <br> <br>
+            <input type="file" accept=".pdf , .jpeg" multiple>
+            <br> <br>
+            <label >Add cart</label> <br>
+            <input type="number"> <br> <br>
+            <label >Enter the range</label> <br> 
+            <input type="range" > <br> <br>
+            <label >Search here</label> <br>
+            <input type="search" placeholder="search">
+            <br> <br>
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>

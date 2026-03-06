@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive; 
+    /* box explore */
+/* remove default margin and padding  from all tags */
+}
+nav, header, aside, main, footer{
+    border: 5px solid black;
+}
+.layout{
+    display: grid;
+    /* we apply it on parent element */
+    /* convvert inline elements to block elements */
+    /* create page layout */
+    grid-template-columns: 1fr 2fr;
+    /*repeat(2, auto)  = auto auto (num of coll i want to get)  also 1fr 3fr*/
+    /* auto will separate the blocks equally */
+    /* (5,1fr), */
+    grid-template-rows: 30vh 70vh 1fr 30vh;
+    /* fr be flexible increase as per required */
+    grid-template-areas:
+        "nav nav"
+        "header header"
+        "sidebar mainbar"
+        "footer footer"
+    ;
+
+}
+nav{
+    grid-area: nav;
+    text-align: center;
+    align-content: center;
+}
+header{
+    grid-area: header;
+    text-align: center;
+     align-content: center;
+}
+aside{
+    grid-area: sidebar;
+    overflow-y: scroll;
+    text-align: justify;
+    height: 100vh;
+
+}
+main{
+    grid-area: mainbar;
+    overflow-y: scroll;
+
+}
+footer{
+    text-align: center;
+    grid-area: footer;
+     align-content: center;
+}

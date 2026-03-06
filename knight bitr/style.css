@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* home page css */
+nav{
+    display: flex;  /*to get side by side*/
+    justify-content: space-between;
+    align-items: center; /* content in will make vertically centered used to  navbar alignment*/
+    background-color: rgb(0, 0, 0,0.5); /*0.1 for transperancy*/
+    padding:2rem;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+    }
+
+}
+a{
+    text-decoration: none;
+}
+.navlinks a{
+    color: white;
+
+}
+.navlinks a:hover{
+    color: hotpink;
+}
+
+.home-header{
+    background: url(./app-link-background.svg) no-repeat center/cover;
+    min-height: 100vh; /*viewport height  no overflow here*/
+    text-align: center;
+    align-content: center;  /* if flex is used align ites used if flex not use only then use align content*/
+    color: white;
+    h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    #ios-store{
+        height: 55px;
+    }
+    .stores{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
